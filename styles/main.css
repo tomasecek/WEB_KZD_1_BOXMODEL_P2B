@@ -1,0 +1,64 @@
+@layer reset, init, design;
+
+@import url(normalize.css) layer(reset);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) layer(init);
+
+@layer init {
+    :root {
+        --primary: #66d4d4;
+        --text: #000000;
+        --black: #000000;
+        --light: #FFFFFF;
+        --gray: #3B3E40;
+    }
+    html {
+        font-family: "Open Sans", sans-serif;
+        color: var(--black);
+        font-weight: 400;
+    }
+    .page__logo::before {
+        content: "";
+        display: block;
+        background: center / contain no-repeat transparent;
+        /*
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        */
+        background-image: url("../images/logo.svg");
+        width: 2em;
+        height: 1em;
+        font-size: 1.5em;
+    }
+    .page__logo > span {
+        display: none;
+    }
+}
+
+/* VRSTVA PRO VAŠE STYLY */
+@layer design {
+    .page__header{
+        padding-left: calc (1em+5%);
+        padding-bottom: calc (1em+5%);
+        background-image: url(../images/header-2560w.webp);
+        background-size: cover;
+        background-position: top center;
+        
+    }
+
+    .page__intro{
+
+        max-width: 45em;
+    }
+    .image-responsive{
+
+        display: block;
+        width: 100%;
+    }
+   .page__cdnte{
+    max-width: 50em;
+    margin: 0 auto;
+   }
+
+
+}
