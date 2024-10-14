@@ -37,28 +37,24 @@
 
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
-    .page__header{
-        padding-left: calc (1em+5%);
-        padding-bottom: calc (1em+5%);
-        background-image: url(../images/header-2560w.webp);
-        background-size: cover;
-        background-position: top center;
-        
-    }
-
-    .page__intro{
-
-        max-width: 45em;
-    }
-    .image-responsive{
-
+    .img-responsive
+    {
         display: block;
         width: 100%;
     }
-   .page__cdnte{
-    max-width: 50em;
-    margin: 0 auto;
-   }
-
-
+    .page__content{
+        max-width: 50em;
+        margin: 0em, auto;
+    }
+    .page__intro{
+        max-width: 50em;
+    }
+    .page__header{
+        padding-left: calc(1em + 5%);
+        padding-bottom: calc(1em +5%);
+        background-image: url(../images/header-2560w.webp);
+        background-size: cover;
+        background-position: top center;
+        color: var(--light);
+    }
 }
