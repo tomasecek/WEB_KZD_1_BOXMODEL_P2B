@@ -1,9 +1,8 @@
 @layer reset, init, design;
- 
+
 @import url(normalize.css) layer(reset);
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap) layer(init);
- 
- 
+
 @layer init {
     :root {
         --primary: #66d4d4;
@@ -29,98 +28,92 @@
         background-image: url("../images/logo.svg");
         width: auto;
         height: 1em;
-        font-size: 1.5em;
+        font-size: 3em;
     }
     .page__logo > span {
         display: none;
     }
 }
- 
+
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
-    .button {
+    .img-responsive
+    {
+        display: block;
+        width: 100%;
+    }
+    .page__logo{
+        display: block;
+        width: 4em;
+        margin: 0 auto;
+    }
+    .page__content{
+        max-width: 58em;
+        margin: 0em auto;
+    }
+    .page__section
+    {
+        padding: 1em;
+    }
+    .page__intro{
+        max-width: 48em;
+    }
+    .page__header{
+        padding: 0.5em calc(1em + 5%) calc(1em + 5%) calc(1em + 5%);
+        background-image: url(../images/header-2560w.webp);
+        background-size: cover;
+        background-position: top center;
+        color: var(--light);
+    }
+    .button{
         display: inline-block;
         padding: 1em 2em;
         text-decoration: none;
-        border-radius: .5rem;
-        font-weight: 700;
+        border-radius: 0.5em;
+        font-weight: bold;
     }
-    .button--secondary {
+    .button--secondary{
         background-color: var(--light);
-        color: var(--black)
+        color: var(--black);
     }
-    .button--secondary:hover {
+    .button--secondary:hover{
         background-color: var(--gray);
-        color: var(--light)
+        color: var(--light);
     }
-    .button--primary {
+    .button--primary{
         background-color: var(--primary);
-        color: var(--light)
+        color: var(--light);
     }
-    .button--primary:hover {
-        background-color: var(--light);
-        color: var(--primary)
+    .button--primary:hover{
+        background-color: var(--black);
+        color: var(--light);
     }
-    .picture-box {
-        margin: 1em 0;
+    .picture-box{
+        margin: 1em 0em;
     }
     .picture-box__caption{
         font-size: 0.8em;
         text-align: center;
+        font-weight: lighter;
+        margin-top: 1em;
     }
-
+    .highlight-box{
+        padding: 2em;
+        border: var(--primary) 3px solid;
+    }
     .list > li{
         margin: 0.5em 0;
-
     }
-
     .list > li::marker{
-    color:var(--primary);
-
+        color: var(--primary);
     }
-    .page__header {
-        padding: calc(1em + 5%);
-        background-image: url(../images/header-2560w.webp);
-        background-size: cover;
-        background-position:top center;
-        color: var(--light);
+    h1
+    {
+        font-size: 5em;
     }
-    .page__intro {
-        max-width: 45em;
+    .panel{
+        width: 25em;
+        display: inline-block;
+        vertical-align: top;
     }
-    .img-responsive {
-        display: block;
-        width: 100%;
-    }
-    .page__content{
-        max-width: 40em;
-        margin: 0 auto;
-    }
-    .page__logo {
-        display: block;
-        width: 4em;
-        margin:auto;
-    }
-
-
-    .h3{
-        font-size: 1.1em;
-        font-weight: bold;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
- 
-   }
-   .highlight-box{
-    padding: 1.75em;
-    border:var(--primary) 2px solid;
-
-   }
-
-
 }
- 
- 
- 
- 
